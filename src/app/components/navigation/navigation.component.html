@@ -1,0 +1,9 @@
+<nav>
+  <ul>
+    <app-menu-item
+      *ngFor="let machine of machines()"
+      [name]="machine.name"
+      [status]="machine.status">
+    </app-menu-item>
+  </ul>
+</nav>

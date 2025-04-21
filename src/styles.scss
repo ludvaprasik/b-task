@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+html {
+  @include mat.theme((
+    color: (
+      theme-type: light,
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+}
+
+:root {
+  --bg-base: #fff;
+  --color-buhler: #05968f;
+  --color-gray: #dcdcdc;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.main__container {
+  display: grid;
+  grid-template-areas: "header" "content";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+  background-color: var(--bg-base);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+header,
+nav {
+  background-color: var(--color-gray);
+}
+
+nav {
+  border-top: 6px solid var(--color-buhler);
+}

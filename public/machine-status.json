@@ -1,0 +1,8 @@
+{
+  "machines": [
+    { "name": "Scale", "icon": "system_update_alt", "status": "Running" },
+    { "name": "Bag Attach", "icon": "menu_book", "status": "Alarm" },
+    { "name": "Packer", "icon": "call_to_action", "status": "Running" },
+    { "name": "Bag Closer", "icon": "grid_on", "status": "Warning" }
+  ]
+}
