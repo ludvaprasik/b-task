@@ -16,6 +16,7 @@ html {
   --bg-base: #fff;
   --color-buhler: #05968f;
   --color-gray: #dcdcdc;
+  --color-lime: #77a926;
 }
 
 html, body {
@@ -41,4 +42,17 @@ nav {
 
 nav {
   border-top: 6px solid var(--color-buhler);
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.alarm, .warning {
+  color: #fff;
+}
+
+.running .mat-icon {
+  color: var(--color-lime);
 }

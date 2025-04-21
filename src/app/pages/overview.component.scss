@@ -1,0 +1,18 @@
+.machines-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4rem;
+  position: relative;
+  z-index: 10;
+  &:after {
+    display: block;
+    height: 6px;
+    background-color: #2b9b09;
+    content: "";
+    position: absolute;
+    top: calc(50% - 3px);
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+}

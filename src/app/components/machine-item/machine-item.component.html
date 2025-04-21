@@ -1,6 +1,8 @@
-<li class="menu-item" [style.background-color]="statusColor()">
-  {{ name }}
-  <mat-icon>{{ icon }}</mat-icon>
-  <mat-icon>{{ statusIcon() }}</mat-icon>
-</li>
+<div [style.background-color]="statusColor()" [class]="status.toLowerCase()" class="machine-item">
+  <div class="item-content">
+    <mat-icon class="machine-icon">{{ icon }}</mat-icon>
+    {{ name }}
+  </div>
+  <mat-icon class="status-icon">{{ statusIcon() }}</mat-icon>
+</div>
 

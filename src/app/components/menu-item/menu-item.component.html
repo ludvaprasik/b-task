@@ -1,4 +1,4 @@
-<li class="menu-item" [style.background-color]="statusColor()">
+<li [style.background-color]="statusColor()" [class]="status.toLowerCase()" class="menu-item">
   {{ name }}
   <mat-icon>{{ statusIcon() }}</mat-icon>
 </li>

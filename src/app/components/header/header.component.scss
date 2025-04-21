@@ -1,0 +1,16 @@
+header {
+  padding: 1rem 2rem;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.header__info,
+.header-widget {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.header-widget {
+  gap: .5rem;
+}

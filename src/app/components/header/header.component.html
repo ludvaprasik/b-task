@@ -1,6 +1,14 @@
 <header>
   <img src="logo_buhler.svg" alt="Buhler Logo" height="40" width="208" />
-  <mat-icon>schedule</mat-icon>
-  <mat-icon>account_circle</mat-icon>
-  <app-navigation></app-navigation>
+  <div class="header__info">
+    <div class="header-widget">
+      <mat-icon>schedule</mat-icon>
+      <app-date-time></app-date-time>
+    </div>
+    <div class="header-widget">
+      <mat-icon>account_circle</mat-icon>
+      Operator
+    </div>
+  </div>
 </header>
+<app-navigation></app-navigation>
